@@ -11,7 +11,7 @@
     --button-text-color: #fff;
     --logo-color: #2196F3;
     --color-list-items: #f5f4fa;
-    --transition-func: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-func: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*---------Index.html------*/
@@ -119,7 +119,7 @@ img {
 
     display: block;
     position: relative;
-    transition: var(--transition-func);
+    transition: color var(--transition-func);
 }
 
 .nav-link:hover,
@@ -137,7 +137,7 @@ img {
 
     padding-top: 32px;
     padding-bottom: 32px;
-    transition: var(--transition-func);
+    transition: fill var(--transition-func);
 }
 
 .contact-mail,
@@ -202,7 +202,7 @@ img {
     border: none;
     padding: 10px 32px;
     cursor: pointer;
-    transition: var(--transition-func);
+    transition: background-color var(--transition-func);
 
 
 }
@@ -388,8 +388,7 @@ img {
     margin-right: 8px;
 }
 
-.portfolio-box,
-.link-portfolio {
+.portfolio-box {
     padding: 20px 24px;
     border: 1px solid #ECECEC;
     border-top: none;
@@ -401,7 +400,8 @@ img {
     text-decoration: none;
     display: block;
     color: var(--primary-text-color);
-    transition: var(--transition-func);
+    transition: box-shadow var(--transition-func), transform var(--transition-func), opacity var(--transition-func);
+    outline: none;
 }
 
 .link-portfilo:hover,
@@ -484,7 +484,7 @@ img {
 
 }
 
-.portfolio-item:hover .overlay {
+.link-portfilo:hover .overlay {
     transform: translateY(0);
     opacity: 1;
 }
@@ -495,7 +495,7 @@ img {
     line-height: 1.14;
     font-size: 14px;
     text-decoration: none;
-    transition: var(--transition-func);
+    transition: color var(--transition-func);
 }
 
 .nav-list .link:hover,
@@ -511,7 +511,7 @@ img {
     font-size: 14px;
     text-decoration: none;
     color: var(--contacts-text-color);
-    transition: var(--transition-func);
+    transition: color var(--transition-func);
 }
 
 .contact-number:hover,
@@ -545,7 +545,7 @@ img {
     display: inline-block;
     box-sizing: border-box;
     padding: 6px 22px;
-    transition: var(--transition-func);
+    transition: color var(--transition-func), background-color var(--transition-func), box-shadow var(--transition-func);
 }
 
 .button.all:hover,
@@ -612,7 +612,7 @@ img {
     left: 0;
     bottom: -5px;
     position: absolute;
-    transition: var(--transition-func), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-func);
 }
 
 .nav-link:hover::after,
@@ -683,7 +683,7 @@ img {
     font-size: 14px;
     text-decoration: none;
     font-style: normal;
-    transition: var(--transition-func);
+    transition: color var(--transition-func);
 }
 
 .adress-link:hover,
@@ -699,7 +699,7 @@ img {
     text-decoration: none;
     color: var(--contacts-text-color);
     font-style: normal;
-    transition: var(--transition-func);
+    transition: color var(--transition-func);
 }
 
 .mail:hover,
@@ -740,8 +740,6 @@ img {
     fill: var(--contacts-text-color);
     display: flex;
     padding: 34px 10px 34px auto;
-
-
     margin-right: 10px;
 }
 
@@ -796,7 +794,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition-time-func);
+    transition: background-color var(--transition-time-func),
+        color var(--transition-time-func);
 }
 
 .insta-link:not(:last-child) {
@@ -807,20 +806,17 @@ img {
 .insta-link:focus {
     background-color: var(--accent-color);
     color: var(--color-list-items);
-    transition: var(--transition-func);
 }
 
 .link-icon {
     fill: #afb1b8;
-
+    transition: fill var(--transition-time-func),
 }
 
 
 .insta-link:hover .link-icon,
 .insta-link:focus .link-icon {
     fill: var(--main-background-color);
-    transition: var(--transition-func);
-    outline: none;
 }
 
 /* -------Cpmpany------- */
@@ -845,12 +841,13 @@ img {
     height: 92px;
     border: 1px Solid #AFB1B8;
     border-radius: 4px;
-    background-color: var(--main-background-color);
+    /* background-color: var(--main-background-color); */
 
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition-func);
+    transition: border var(--transition-func),
+        fill var(--transition-func);
 }
 
 .logo-company:not(:last-child) {
@@ -860,11 +857,11 @@ img {
 .logo-link:hover,
 .logo-link:focus {
     border: solid 1px var(--accent-color);
-    transition: var(--transition-func);
 }
 
 .logo-icon {
     fill: #afb1b8;
+    transition: fill var(--transition-time-func),
 }
 
 
@@ -914,7 +911,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: var(--transition-func);
+    transition: background-color var(--transition-func);
 
 }
 
@@ -931,7 +928,7 @@ img {
 
 .link-icon-footer {
     fill: var(--main-background-color);
-    transition: var(--transition-func);
+    transition: fill var(--transition-func);
 
 }
 
@@ -951,7 +948,7 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
 
     opacity: 1;
-    transition: var(--transition-time-func), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity var(--transition-time-func), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -967,6 +964,8 @@ img {
     background-color: var(--main-background-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    transform: translate(-50%, -50%) scale(1.1);
+    transition: visibility var(--transition-time-func), transform var(--transition-time-func);
 }
 
 .backdrop.is-hidden {
@@ -994,7 +993,7 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-    transition: var(--transition-time-func);
+
 }
 
 .icon-close-btn {
