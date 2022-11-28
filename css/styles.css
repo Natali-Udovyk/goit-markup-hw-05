@@ -1002,17 +1002,22 @@ img {
 
     top: 8px;
     right: 8px;
-
+    background-color: transparent;
     background: #FFFFFF;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
-
+    transition: background-color var(--transition-func);
 }
 
 .icon-close-btn {
     fill: var(--logo-text-color);
-    transition: fill var(--transition-time-func);
+    transition: fill var(--transition-func);
+}
+
+.icon-close-btn:hover,
+.icon-close-btn:focus {
+    fill: var(--accent-color);
 }
