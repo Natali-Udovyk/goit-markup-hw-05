@@ -1239,6 +1239,7 @@ img {
     position: absolute;
     display: inline-block;
     fill: var(--main-background-color);
+
 }
 
 .btn-send-footer:hover,
