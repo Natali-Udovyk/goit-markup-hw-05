@@ -1228,6 +1228,14 @@ img {
     color: var(--button-text-color);
     cursor: pointer;
     margin-left: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.icon-telegram {
+    position: absolute;
+    display: inline-block;
+    fill: var(--main-background-color);
 }
 
 .btn-send-footer:hover,
