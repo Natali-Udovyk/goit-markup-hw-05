@@ -907,9 +907,12 @@ img {
 
 }
 
+
+
 .footer-adress {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .social-links-footer {
@@ -956,41 +959,6 @@ img {
 
 }
 
-/* -------Footer----Form---- */
-.form-submit-mail {
-    display: inline-block;
-
-}
-
-.title-email {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.input-emai-field {
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
-
-.btn-send-footer {
-    margin-right: 215px;
-}
-
-.submit {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: #FFFFFF;
-}
 
 /* -----Modal------ */
 .backdrop {
@@ -1218,4 +1186,46 @@ img {
 .button-send:focus {
     background-color: var(--accent-color);
     color: var(--main-background-color);
+}
+
+/* ------foooter---submit----- */
+.footer-submit {
+    display: flex;
+
+}
+
+.form-submit-mail {
+    display: inline-block;
+
+}
+
+.title-email {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.input-emai-field {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.btn-send-footer {
+    margin-right: 215px;
+}
+
+.submit {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(30/16);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
 }
