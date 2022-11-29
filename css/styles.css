@@ -902,10 +902,10 @@ img {
 
 }
 
-.footer-social {
+/* .footer-social {
     margin-left: 93px;
 
-}
+} */
 
 
 
@@ -1190,7 +1190,7 @@ img {
 
 /* ------foooter---submit----- */
 .footer-submit {
-    display: flex;
+    /* display: flex; */
 
 }
 
@@ -1214,10 +1214,25 @@ img {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
 }
 
 .btn-send-footer {
-    margin-right: 215px;
+    background: var(--button-order-color);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    color: var(--button-text-color);
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.btn-send-footer:hover,
+.btn-send-footer:hover {
+    background-color: var(--accent-color);
 }
 
 .submit {
