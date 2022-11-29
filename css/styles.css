@@ -1229,10 +1229,13 @@ img {
     cursor: pointer;
     margin-left: 12px;
     display: inline-block;
+    padding: 10px 62px 10px 28px;
     position: relative;
 }
 
 .icon-telegram {
+    top: 13px;
+    right: 18px;
     position: absolute;
     display: inline-block;
     fill: var(--main-background-color);
