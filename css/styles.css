@@ -1055,6 +1055,15 @@ img {
     letter-spacing: 0.01em;
     color: var(--contacts-text-color);
     display: block;
+}
+
+.input-name {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: var(--contacts-text-color);
+    display: block;
     margin-bottom: 4px;
 }
 
@@ -1109,6 +1118,11 @@ img {
     display: flex;
     align-items: center;
     margin-top: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: var(--contacts-text-color);
 }
 
 .text-user-check {
@@ -1130,12 +1144,12 @@ img {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.icon-chek-form {
-    padding: 2px;
-
-    border-radius: 2px;
+.checkbox-modal {
+    width: 16px;
+    height: 15px;
+    border-radius: 3px;
     border: 2px solid var(--logo-text-color);
-    margin-right: 7px;
+    /* margin-right: 7px; */
 }
 
 .checkbox {
@@ -1143,8 +1157,8 @@ img {
     position: absolute;
 }
 
-.checkbox:checked+.icon-chek-form {
-    border-color: var(--accent-color);
+.checkbox:checked+.checkbox-modal {
+    border: none;
     background-color: var(--accent-color);
 }
 
@@ -1153,7 +1167,6 @@ img {
 }
 
 .modal-icon-check {
-    display: none;
     fill: #ffffff;
 }
 
