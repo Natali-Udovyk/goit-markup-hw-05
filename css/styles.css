@@ -1149,7 +1149,11 @@ img {
     height: 15px;
     border-radius: 3px;
     border: 2px solid var(--logo-text-color);
-    /* margin-right: 7px; */
+    margin-right: 7px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .checkbox {
@@ -1162,15 +1166,16 @@ img {
     background-color: var(--accent-color);
 }
 
-.checkbox:focus+.icon-chek-form {
+/* .checkbox:focus+.icon-chek-form {
     outline: 2px solid rgba(0, 0, 255, 0.5);
-}
+} */
 
 .modal-icon-check {
     fill: #ffffff;
 }
 
-.checkbox:checked+.icon-chek-form.modal-icon-chek {
+.icon-chek-form {
+    position: absolute;
     display: block;
 }
 
